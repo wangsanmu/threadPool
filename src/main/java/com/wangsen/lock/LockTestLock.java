@@ -9,10 +9,12 @@ public class LockTestLock {
     public static void main(String[] args) {
         MyThreadLock myThreadLock = new MyThreadLock();
 
-        new Thread(myThreadLock).start();
-        new Thread(myThreadLock).start();
-        new Thread(myThreadLock).start();
-        new Thread(myThreadLock).start();
+        for(int i=0;i<3;i++){
+            new Thread(myThreadLock).start();
+        }
+//        new Thread(myThreadLock).start();
+//        new Thread(myThreadLock).start();
+//        new Thread(myThreadLock).start();
 
     }
 }

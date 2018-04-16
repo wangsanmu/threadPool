@@ -1,3 +1,5 @@
+package com.wangsen.threadPool;
+
 /**
  * @author wangsen
  * @data 2018/4/7 16:23
@@ -10,6 +12,7 @@ public class MyTask implements Runnable{
         this.taskNum = num;
     }
 
+    @Override
     public void run() {
         System.out.println("正在执行task "+taskNum);
         try {

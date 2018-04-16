@@ -1,3 +1,7 @@
+package com.wangsen.threadPool;
+
+import com.wangsen.threadPool.MyTask;
+
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -20,5 +24,8 @@ public class Test {
         }
         executor.shutdown();
     }
+
+
+
 }
 

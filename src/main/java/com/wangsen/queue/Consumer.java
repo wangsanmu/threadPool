@@ -14,6 +14,7 @@ public class Consumer implements  Runnable{
         this.blockingQueue = blockingQueue;
     }
 
+    @Override
     public void run() {
         try {
             System.out.println("当前消费者正在消费队列"+Thread.currentThread().getName());
